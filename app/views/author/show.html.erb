@@ -1,0 +1,11 @@
+<% default_title 'Авторы' %>
+
+<div>
+  <%@authors.each do |author|%>
+    <div>
+      <a href="<%=author_path author%>">
+        <span><%=author.surname%> <%=author.given_name.first%>. <%=author.patronymic%>.</span>
+      </a>
+    </div>
+  <%end%>
+</div>

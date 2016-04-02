@@ -1,0 +1,21 @@
+<% default_title @author.surname %>
+
+<h3>
+  <span><%=@author.surname%></span>
+  <span><%=@author.given_name%></span>
+  <span><%=@author.patronymic%></span>
+</h3>
+<div>
+  <span><%=@author.description%></span>
+</div>
+<hr>
+<div>
+  <span>Книги</span>
+  <ul>
+    <%@author.books.each do|book|%>
+    <li>
+      <a href="<%=book_path book%>"><%=book.name%></a>
+    </li>
+    <%end%>
+  </ul>
+</div>

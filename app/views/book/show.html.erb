@@ -1,0 +1,11 @@
+<% full_title 'Нашлось ...' %>
+<h1>
+  Книги
+</h1>
+
+<div>
+  <%@books.each do |book|%>
+    <span><a href="<%=book_path book%>"><%=book.name%></a></span>
+    <hr>
+  <%end%>
+</div>

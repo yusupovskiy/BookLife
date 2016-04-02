@@ -1,0 +1,33 @@
+<% default_title @book.name %>
+<div>
+  <span>Название:</span>
+  <span><%=@book.name%></span>
+</div>
+<div>
+  <div>Автор</div>
+  <ul>
+  <%@book.authors.each do |author|%>
+    <li>
+      <span class="_author-name">
+        <%=author.surname%> <%=author.given_name.first%>. <%=author.given_name.first%>.
+      </span>
+      <span class="_author-birthday">(<%=author.birthday_start%>)</span>
+    </li>
+  <%end%>
+  </ul>
+
+  <span>Жанр:</span>
+  <span>
+  <%@book.genres.each do |genre|%>
+      <span class="_author-name"><%=genre.name%></span>
+  <%end%>
+  </span>
+
+  <br><br>
+  <div>Описание</div>
+  <hr>
+  <div>
+    <%=@book.description%>
+  </div>
+</div>
+<hr>
