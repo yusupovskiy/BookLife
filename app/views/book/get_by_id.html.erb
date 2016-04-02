@@ -9,7 +9,7 @@
   <%@book.authors.each do |author|%>
     <li>
       <span class="_author-name">
-        <%=author.surname%> <%=author.given_name.first%>. <%=author.given_name.first%>.
+        <a href="<%=author_path author%>"><%=author.surname%> <%=author.given_name.first%>. <%=author.given_name.first%>.</a>
       </span>
       <span class="_author-birthday">(<%=author.birthday_start%>)</span>
     </li>
