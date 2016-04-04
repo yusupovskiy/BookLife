@@ -18,4 +18,11 @@ module ApplicationHelper
   def default_title title
     full_title title    
   end
+
+  def include_css css_file
+    '<script src="assets/' + css_file + '.css"></script>'
+  end
+  def include_js js_file
+    '<script src="assets/' + js_file + '.js"></script>'
+  end
 end

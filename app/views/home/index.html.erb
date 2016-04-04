@@ -1,4 +1,4 @@
 <% full_title 'Главная' %>
 
-<h2><a href="/authors">Авторы</a></h2>
-<h2><a href="/books">Книги</a></h2>
+<h2><%= link_to "Авторы", controller: "author", action: "show" %></h2>
+<h2><%= link_to "Книги", controller: "book", action: "show" %></h2>
