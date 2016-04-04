@@ -1,10 +1,120 @@
 <% default_title 'Нашлось: ' + @books.size.to_s %>
+<%= javascript_include_tag 'catalogBooks' %>
 
-<h1>Книги</h1>
 
-<div>
-  <%@books.each do |book|%>
-    <span><a href="<%=book_path book%>"><%=book.name%></a></span>
-    <hr>
-  <%end%>
+<div class="recomend">
+  <div class="panelFunctions">
+    <div class="panelText">Рекомендуем</div>
+    <div class="panelBatton"><a href="index.html">Все рекомендуемые</a></div>
+    <div class="arrowsIco">
+      <div class="arrowLeft"><div></div></div>
+      <div class="arrowRight"><div></div></div>
+    </div>
+  </div>
+  <div class="booksList">
+    <% @books.includes(:authors).each do |book|
+      goto_book = book_path book
+      author = book.authors.first
+    %>
+    <a href="<%=goto_book%>" style="display: block;">
+      <div class="bookBlok">
+        <div class="blackFon"></div>
+        <div class="narratorsBook">
+          <div class="bookNarrators">
+            <div class="narratorsInfo">
+              <div class="narratorsName">Геннадий Смирнов</div>
+              <div class="icoStarDark"></div>
+              <div class="narratorsRaiting">5.0</div>
+            </div>
+            <div class="commentBlok">
+              <div class="commentText">
+                <div class="commentMargin">ЛУЧШИЙ ОТЗЫВ</div>
+                <div class="icoStarDark icoStarDarkLitl"></div>
+                <div class="narratorsRaiting">5.0</div>
+              </div>
+              <div>Очень понравился голос читающего диктора, все четко и понятно, так же он красава...</div>
+            </div>
+            <div class="commentBlok">
+              <div class="commentText">
+                <div class="commentMargin">ХУДШИЙ ОТЗЫВ</div>
+                <div class="icoStarDark icoStarDarkLitl"></div>
+                <div class="narratorsRaiting">5.0</div>
+              </div>
+              <div>Вроде голос у дикотора не плохой, но вот некоторые слова он произносит не правильно...</div>
+            </div>
+            <a href="index2.html" class="buttonReadDark">Слушать</a>
+          </div>
+        </div>
+        
+        <div class="textFon textFonBlock">Перейти к книге</div>
+        <div class="textReader">Слушать книгу</div>
+        <div class="textFonRead">Перейти к чтению</div>
+        <div class="textFonAuthor">Перейти к автору</div>
+        <div class="textFonAdd">Добавить книгу к себе</div>
+        <div class="imgDivPosterBook">
+          <img src="/assets/images/poster/imageBook3.jpg" alt="Bool" />
+        </div>
+        <div class="descBlok">
+          <div class="descLeft">
+            <a href="<%=goto_book%>" class="nameBook"><%=book.name%></a>
+            <a href="<%=author_path author%>" class="nameAuthor"><%=author_initials author%></a>
+            <div class="blokStars">
+              <div class="icoStarR"></div>
+              <div class="icoStarR"></div>
+              <div class="icoStarR"></div>
+              <div class="icoStarZ"></div>
+              <div class="icoStar"></div>
+            </div>
+          </div>
+          <div class="descRight">
+            <a href="index2.html" class="buttonReadCh">Читать</a>
+            <a class="buttonReadS">Слушать</a>
+            <a href="index2.html" class="blokAdd">
+              <div class="icoAdd"></div>
+              <div class="textAdd">Добавить к себе на полку</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </a>
+    <%end%>
+  </div>
+</div>
+
+<div class="recomend">
+  <div class="panelFunctions">
+    <div class="panelText">Популярные полки</div>
+    <div class="panelBatton"><a href="index.html">Все популярные полки</a></div>
+    <div class="arrowsIco">
+      <div class="arrowLeft"><div></div></div>
+      <div class="arrowRight"><div></div></div>
+    </div>
+  </div>
+  <div class="shelfList">
+    <div class="blokShelf">
+      <div class="blackFon"></div>
+      <div class="textShelfFon textFonBlock">Перейти к полке</div>
+      <div class="textShelfUser">Перейти к пользователю</div>
+      <div class="imgDivPosterShelf">
+        <img src="/assets/images/posterShelf/1.jpg" />
+      </div>
+      <div class="descBlokShelf">
+        <h2>Какие книги советует С...</h2>
+        <div class="descRightShelf">
+          <div class="icoUsersNumberShelf"></div>
+          <div class="numberShelf">14</div>
+          <div class="icoBooksNumberShelf"></div>
+          <div class="numberShelf">7</div>
+          <div class="icoTimeNumberShelf"></div>
+          <div class="numberShelf">1д</div>
+        </div>
+        <a href="index.html" class="userPanelInfo">
+          <div class="icoUsersShelf">
+            <img src="/assets/images/icoUsers/2.jpeg" />
+          </div>
+          <div class="usersNameShelfList">Стив Джобс</div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

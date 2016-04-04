@@ -3,14 +3,54 @@
 <head>
   <title><%=title%></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'global.css'%>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="/assets/javascripts/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript">
+  $("html").niceScroll({cursorcolor: 'rgb(123,133,152)', cursorborder: '0', cursorwidth: '10px', cursorborderradius: '0'});
+  </script>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<a href="/">Главная - BookLife</a>
+    <div id="leftBlokContent">
+      <div class="logo"><a href="index.html">КнигаЖизнь</a></div>
+      <div class="search"><div class="searchIco"></div></div>
+      <ul class="leftMenu">
+        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoBook.png" /></span><span class="battonTextMenu">Мои книги</span></a></li>
+        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoShelf.png" /></span><span class="battonTextMenu">Библиотека</span></a></li>
+        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoGenres.png" /></span><span class="battonTextMenu">Жанр</span></a></li>
+        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoFree.png" /></span><span class="battonTextMenu">Бесплатные книги</span></a></li>
+        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoAutor.png" /></span><span class="battonTextMenu">Авторы</span></a></li>
+        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoBooksS.png" /></span><span class="battonTextMenu">Серии книг</span></a></li>
+      </ul>
+      <div class="battonRead">
+        <a href="index2.html"><span class="battonImgRead"><img src="/assets/images/poster/imageBook3.jpg" /></span><span class="battonTextRead">Продолжить чтение...</span></a>
+      </div>
+      <div id="bottonBlok">
+        <div class="footerMenu">
+          <a href="index.html">О сервисе</a>
+          <a href="index.html">Обратная связь</a>
+          <a href="index.html">Служба поддержки</a>
+          <a href="index.html">Партнерам</a>
+          <a href="index.html">Правообладателям</a>
+          <a href="index.html">Не нашли нужную книгу?</a>
+          <a href="index.html">Услуги b2b</a>
+          <a href="index.html">Вакансии</a>
+          <a href="index.html">Подписка для компаний</a>
+        </div>
+        
+        <div class="bottonLoginButton">
+          <div class="loginButton"><a href="index.html">Вход</a></div>
+          <div class="regisButton"><a href="index.html">Регистрация</a></div>
+        </div>
+      </div>
+    </div>
+
+<div id="rightBlokContent">
 
 <%= yield %>
 
+</div>
 </body>
 </html>
