@@ -1,11 +1,13 @@
 <% default_title @book.name %>
+  <%= stylesheet_link_tag 'book.style.css'%>
 
 
+      <a class="left-button-closed"><span></span></a>
       <div class="pageBook">
         <div class="panelBookInfo">
           <div class="infoBlok">
             <div class="posterBook">
-              <img src="/assets/images/poster/imageBook3.jpg" alt="Bool" />
+              <img src="assets/images/poster/imageBook3.jpg" alt="Bool" />
             </div>
             <div class="onePanelBook">
               <div class="bookInfoBlok">
@@ -17,17 +19,14 @@
               <div class="bottonPanelBookInfo">
                 <a href="index2.html" class="addBookButton">Добавить в мои книги</a>
                 <div class="blokStars">
-                  <div class="icoStarR"></div>
-                  <div class="icoStarR"></div>
-                  <div class="icoStarR"></div>
-                  <div class="icoStarZ"></div>
+                  <div class="raiting-book"></div>
+                  <div class="icoStar"></div>
+                  <div class="icoStar"></div>
+                  <div class="icoStar"></div>
+                  <div class="icoStar"></div>
                   <div class="icoStar"></div>
                 </div>
                 <div>
-                  <a class="battonLike" href="index2.html">
-                    <div class="likeImg"></div>
-                    <div>4</div>
-                  </a>
                   <a href="index2.html" class="otzivPlus">
                     <div class="plusText">+</div>
                     <div class="battonTextOtziv">Написать отзыв</div>
@@ -40,7 +39,7 @@
                 <br id="tab2"/><br id="tab3"/>
                 <a href="#tab1" class="activeMenu1"><div class="eBookBlok"></div><div class="eBookText">Цифровая книга</div></a>
                 <a href="#tab2"><div class="eAuBookBlok"></div><div class="eAuBookText">Цифровая аудиокнига</div></a>
-                <a href="#tab3"><div class="bBookBlok"></div><div class="bBookText">Бумажная книга</div></a>
+                <a href="#tab3"><div class="bBookBlok"></div><div class="bBookText">Бумажная книга<!--или "Печатная книга"?--></div></a>
                 <!--<div class="blokButtonRead">
                   <div class="commentBlok">
                     <div class="commentText">
@@ -65,7 +64,7 @@
                     <div class="commentTextReadUsers">СЛУЧАЙНЫЙ ОТЗЫВ</div>
                     <div class="commentText">
                       <div class="icoUsersShelf">
-                        <img src="/assets/images/icoUsers/2.jpeg" />
+                        <img src="assets/images/icoUsers/2.jpeg" />
                       </div>
                       <div class="commentMargin">ЮСУПОВ РАСУЛ</div>
                       <div class="icoStarR"></div>
@@ -81,19 +80,47 @@
                 <div class="listOfReaders">
                   <div class="readerBlok">
                     <div class="readerInfo">
-                      <div class="narratorsName">Диктор: Геннадий Смирнов</div>
+                      <div class="narratorsName">Нигде не купишь!</div>
                       <div class="icoStarR"></div>
                       <div class="narratorsRaiting">5.0</div>
+                      <!--<div class="narratorsName">Чтецы: Александр Машков, Юсупов Расул</div>-->
                     </div>
-                    <a href="index.html" class="buttonReader">Отзывы (4)</a>
+                    <div class="commentBlok">
+                      <div class="commentTextReadUsers">СЛУЧАЙНЫЙ ОТЗЫВ</div>
+                    <a href="#" class="buttonReader audio-comment-button">Отзывы (4)</a>
+                      <div class="commentText">
+                        <div class="icoUsersShelf">
+                          <img src="assets/images/icoUsers/2.jpeg" />
+                        </div>
+                        <div class="commentMargin">ЮСУПОВ РАСУЛ</div>
+                        <div class="icoStarR"></div>
+                        <div class="narratorsRaiting">5.0</div>
+                      </div>
+                      <div>Очень понравился голос читающего диктора, все четк но вот некоторы Очень понравился голос читающего 
+                          диктора, все четк но вот некоторы Очень понравился голос читающего диктора, все четк но вот некоторы...</div>
+                    </div>
                     <a href="index.html" class="buttonReader">Оставить отзыв</a>
                     <a href="index.html" class="buttonReader">Слушать</a>
                   </div>
+                  <hr style="border: 0; margin: 10px 0;"/>
                   <div class="readerBlok">
                     <div class="readerInfo">
-                      <div class="narratorsName">Геннадий Смирнов</div>
+                      <div class="narratorsName">АВ Паблишинг</div>
                       <div class="icoStarR"></div>
                       <div class="narratorsRaiting">5.0</div>
+                    </div>
+                    <div class="commentBlok">
+                      <div class="commentTextReadUsers">СЛУЧАЙНЫЙ ОТЗЫВ</div>
+                      <div class="commentText">
+                        <div class="icoUsersShelf">
+                          <img src="assets/images/icoUsers/2.jpeg" />
+                        </div>
+                        <div class="commentMargin">ЮСУПОВ РАСУЛ</div>
+                        <div class="icoStarR"></div>
+                        <div class="narratorsRaiting">5.0</div>
+                      </div>
+                      <div>Очень понравился голос читающего диктора, все четк но вот некоторы Очень понравился голос читающего 
+                          диктора, все четк но вот некоторы Очень понравился голос читающего диктора, все четк но вот некоторы...</div>
                     </div>
                     <a href="index.html" class="buttonReader">Отзывы (4)</a>
                     <a href="index.html" class="buttonReader">Оставить отзыв</a>
@@ -103,12 +130,12 @@
                 <div class="listPaperBooks">
                   <h4>Желаете книгу в бумажном виде?</h4>
                   <div class="internShopBook">
-                    <img src="/assets/images/internetShop/logoOzonRu.png">
+                    <img src="assets/images/internetShop/logoOzonRu.png">
                     <span class="spanColorPrice">324 р.</span>
                     <a href="index2.php" class="buttonReadWhile">Купить</a>
                   </div>
                   <div class="internShopBook">
-                    <img src="/assets/images/internetShop/logoOzonRu.png">
+                    <img src="assets/images/internetShop/logoOzonRu.png">
                     <span class="spanColorPrice">324 р.</span>
                     <a href="index2.php" class="buttonReadWhile">Купить</a>
                   </div>
@@ -178,7 +205,7 @@
             <div class="element">
               <div class="panelScrollBookRight">
                 <div class="recomendBook">
-                  <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook1.jpg" />
+                  <img class="rightPanelImgPoster" src="assets/images/poster/imageBook1.jpg" />
                   <div class="rightPanelInfoBook">
                     <div class="imgRed"></div>
                     <div class="rightPanelNameBook">Илон Маск</div>
@@ -207,7 +234,7 @@
                   </div>
                 </div>
                 <div class="recomendBook">
-                  <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook1.jpg" />
+                  <img class="rightPanelImgPoster" src="assets/images/poster/imageBook1.jpg" />
                   <div class="rightPanelInfoBook">
                     <div class="imgRed"></div>
                     <div class="rightPanelNameBook">Илон Маск</div>
@@ -236,7 +263,7 @@
                   </div>
                 </div>
                 <div class="recomendBook">
-                  <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook2.jpg" />
+                  <img class="rightPanelImgPoster" src="assets/images/poster/imageBook2.jpg" />
                   <div class="rightPanelInfoBook">
                     <div class="imgRed"></div>
                     <div class="rightPanelNameBook">Илон Маск</div>
@@ -265,7 +292,7 @@
                   </div>
                 </div>
                 <div class="recomendBook">
-                  <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook3.jpg" />
+                  <img class="rightPanelImgPoster" src="assets/images/poster/imageBook3.jpg" />
                   <div class="rightPanelInfoBook">
                     <div class="imgRed"></div>
                     <div class="rightPanelNameBook">Илон Маск</div>
@@ -294,7 +321,7 @@
                   </div>
                 </div>
                 <div class="recomendBook">
-                  <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook4.jpg" />
+                  <img class="rightPanelImgPoster" src="assets/images/poster/imageBook4.jpg" />
                   <div class="rightPanelInfoBook">
                     <div class="imgRed"></div>
                     <div class="rightPanelNameBook">Илон Маск</div>
@@ -323,7 +350,7 @@
                   </div>
                 </div>
                 <div class="recomendBook">
-                  <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook4.jpg" />
+                  <img class="rightPanelImgPoster" src="assets/images/poster/imageBook4.jpg" />
                   <div class="rightPanelInfoBook">
                     <div class="imgRed"></div>
                     <div class="rightPanelNameBook">Илон Маск</div>
@@ -374,7 +401,7 @@
             <div class="element">
               
               <div class="recomendBook">
-                <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook1.jpg" />
+                <img class="rightPanelImgPoster" src="assets/images/poster/imageBook1.jpg" />
                 <div class="rightPanelInfoBook">
                   <div class="imgRed"></div>
                   <div class="rightPanelNameBook">Илон Маск</div>
@@ -403,7 +430,7 @@
                 </div>
               </div>
               <div class="recomendBook">
-                <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook2.jpg" />
+                <img class="rightPanelImgPoster" src="assets/images/poster/imageBook2.jpg" />
                 <div class="rightPanelInfoBook">
                   <div class="imgRed"></div>
                   <div class="rightPanelNameBook">Илон Маск</div>
@@ -432,7 +459,7 @@
                 </div>
               </div>
               <div class="recomendBook">
-                <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook4.jpg" />
+                <img class="rightPanelImgPoster" src="assets/images/poster/imageBook4.jpg" />
                 <div class="rightPanelInfoBook">
                   <div class="imgRed"></div>
                   <div class="rightPanelNameBook">Илон Маск</div>
@@ -461,7 +488,7 @@
                 </div>
               </div>
               <div class="recomendBook">
-                <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook3.jpg" />
+                <img class="rightPanelImgPoster" src="assets/images/poster/imageBook3.jpg" />
                 <div class="rightPanelInfoBook">
                   <div class="imgRed"></div>
                   <div class="rightPanelNameBook">Илон Маск</div>
@@ -511,7 +538,7 @@
             <div class="element">
               
               <div class="recomendBook">
-                <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook1.jpg" />
+                <img class="rightPanelImgPoster" src="assets/images/poster/imageBook1.jpg" />
                 <div class="rightPanelInfoBook">
                   <div class="imgRed"></div>
                   <div class="rightPanelNameBook">Илон Маск</div>
@@ -540,7 +567,7 @@
                 </div>
               </div>
               <div class="recomendBook">
-                <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook2.jpg" />
+                <img class="rightPanelImgPoster" src="assets/images/poster/imageBook2.jpg" />
                 <div class="rightPanelInfoBook">
                   <div class="imgRed"></div>
                   <div class="rightPanelNameBook">Илон Маск</div>
@@ -569,7 +596,7 @@
                 </div>
               </div>
               <div class="recomendBook">
-                <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook4.jpg" />
+                <img class="rightPanelImgPoster" src="assets/images/poster/imageBook4.jpg" />
                 <div class="rightPanelInfoBook">
                   <div class="imgRed"></div>
                   <div class="rightPanelNameBook">Илон Маск</div>
@@ -598,7 +625,7 @@
                 </div>
               </div>
               <div class="recomendBook">
-                <img class="rightPanelImgPoster" src="/assets/images/poster/imageBook3.jpg" />
+                <img class="rightPanelImgPoster" src="assets/images/poster/imageBook3.jpg" />
                 <div class="rightPanelInfoBook">
                   <div class="imgRed"></div>
                   <div class="rightPanelNameBook">Илон Маск</div>
@@ -627,30 +654,7 @@
                 </div>
               </div>
             </div>
-
-          </div>          
-          <style>
-            .element {
-              overflow: hidden;
-            }
-            .rightScrollButton, .leftScrollButton {
-              padding: 0;
-              margin: 0;
-              border: 0;
-              background: rgb(123,133,152);
-              position: absolute;
-              top: 34px;
-            }
-            .rightScrollButton {
-              right: 234px;
-            }
-            .leftScrollButton {
-              right: 269px;
-            }
-            .panelScrollBookRight{
-              transition: all 0.5s ease;
-            }
-          </style>
+          </div>  
         </div>
         </div>
 

@@ -1,197 +1,40 @@
-body {
+﻿body {
 	margin: 0;
 	background: rgb(53,59,74);
 	font-family: Myriad Pro;
 }
-#leftBlokContent {
+body, a {
+    color: rgb(123,133,152);
+}
+a {
+	text-decoration: blink;
+}
+#left-column {
 	width: 240px;
 	height: 100%;
 	background: rgb(33,38,50);
 	float: left;
 	position: fixed;
+    z-index: 99;
 }
-#rightBlokContent {
-    width: 83.845%;
-	float: right;
-    margin: 0 20px 0 10px;   
-	/*display: flex;*/
-}
-.bookBlok {
-	width: 191px;
-    margin-left: 10px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-}
-.imgDivPosterBook>img {
-	width: 100%;
-}
-.stoProcentImg {
-    height: 100%;
-}
-.imgDivPosterBook {
-    width: 100%;
-    *height: 287px;
-    height: 277px;
-}
-a {
-	text-decoration: blink;
-}
-.nameAuthor, .nameBook {
-	color: rgb(123,133,152);
-    margin-bottom: 5px;
-    display: table;
-}
-.nameAuthor:hover, .nameBook:hover , .usersNameShelfList:hover {
-	text-decoration: underline;
-}
-.descBlok {
-	background: rgb(33,38,50);
-	width: 171px;
-    height: 90px;
-	position: relative;
-	/*bottom: 25px;*/
-    *margin-top: -25px;
-    margin-top: -15px;
-	padding: 0 10px;
-}
-.nameBook {
-	font-size: 14px;
-}
-.nameAuthor {
-	font-size: 11px;
-}
-.buttonReadCh, .buttonReadS {
-    font-size: 9.3px;
-    width: 41px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    background: rgb(123,133,152);
-    text-align: center;
-    color: rgb(33,38,50);
-    margin: 0 auto 3px auto;
-    display: table;
-    cursor: pointer;
-}
-.buttonReadCh:hover, .buttonReadS:hover {
-	color: rgb(123,133,152);
-    background: rgb(53,59,74);
-}
-.descLeft {
-	float: left;
-	margin-top: 10px;
-}
-.descRight {
-	float: right;
-	margin-top: 5px;
-}
-.icoStar, .icoStarR, .icoStarZ, .icoStarDark {
-	background-size: 100%;
-	background-repeat: no-repeat;
-	width: 18px;
-	height: 18px;
-}
-.icoAdd {
-    background-image: url(/assets/images/icoAdd.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 17px;
-    height: 17px;
-    float: left;
-    margin-top: 6px;
-}
-.textAdd {
-    font-size: 9px;
-    float: right;
-    color: rgb(123,133,152);
-    width: 36px;
-    padding-left: 3px;
-}
-.icoStar {
-	background-image: url(/assets/images/icoStar.png);
-}
-.icoStarR {
-	background-image: url(/assets/images/icoStarR.png);
-}
-.icoStarDark {
-	background-image: url(/assets/images/icoStarDark.png);
-}
-.icoStarZ {
-	background-image: url(/assets/images/icoStarZ.png);
-}
-.blokStars {
-	display: flex;
-}
-.arrowsIco {
-	display: flex;
-	position: relative;
-	top: 11px;
-	float: right;
-}
-.panelText {
-	font-size: 24px;
-	color: rgb(123,133,152);
-	margin-right: 10px;
-	float: left;
-    text-shadow: black 2px 2px 3px;
-}
-.recomend {
-    margin: 25px 0;
-	width: 100%;
-}
-.panelBatton>a {
-	background: rgb(123,133,152);
-	color: rgb(33,38,50);
-	text-decoration: blink;
-	padding: 3px 10px 4px;
-}
-.panelBatton>a:hover {
-	color: white;
-	background: rgb(140,40,22);
-}
-.arrowLeft>div {
-	background: url(/assets/images/icoArrowLeft.png), rgb(123,133,152);
-}
-.arrowRight>div {
-	background: url(/assets/images/icoArrowRight.png), rgb(123,133,152);
-}
-.arrowLeft>div, .arrowRight>div {
-	background-size: 100%;
-	background-repeat: no-repeat;
-	width: 18px;
-	height: 18px;
-    margin: 2.5px auto;
-}
-.arrowLeft, .arrowRight {
-	height: 23px;
-	width: 31px;
-	background: rgb(123,133,152);
-    margin-right: 2px;
-}
-.panelFunctions {
-	display: block;
-	margin-bottom: 15px;
-	height: 29px;
-    margin-left: 10px;
-}
-.panelBatton {
-	position: relative;
-	top: 6px;
-	float: left;
-}
-.booksList {
-	display: flex;
+#main-column {
+	position: absolute;
+    *margin: 0 20px 0 250px;
+	margin: 0 370px 0 250px;
+    padding-bottom: 10px;
+    left: 0;
+    right: 0;
 }
 .logo {
 	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
+	*background: rgb(150, 66, 51);
 	background: rgb(140,40,22);
-	padding: 6px 0;
+	padding: 5px 0 6px;
 }
 .logo>a {
 	color: white;
-	text-decoration: blink;
     text-shadow: black 2px 2px 3px;
 }
 .search {
@@ -202,7 +45,7 @@ a {
 	border: 1px solid rgb(11,17,32);
 }
 .searchIco {
-	background-image: url(/assets/images/icoLoupe.png);
+	background-image: url(../images/icoLoupe.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width: 22px;
@@ -213,37 +56,41 @@ a {
 .leftMenu {
 	list-style-type: none;
     padding: 0;
+    display: table;
+    width: 100%;
 }
 .leftMenu>li>a {
 	color: rgb(123,133,152);
-	text-decoration: blink;
 	font-size: 13px;
 	display: block;
 	border: 5px solid rgb(33,38,50);
 	border-width: 0 0 0 4px;
+    /*float: left;
 	
 	/*transition: all .2s ease-in-out 0.1s;*/
 }
 .leftMenu>li>a:hover {
     border-color: rgb(123,133,152);	
+	background: rgb(11,17,32);
 }
+.lmenu-button-name {
+    padding: 8.5px 0 9.5px;
+	display: inline-block;
+}
+
+/*delet*/
 .battonImgMenu {
-    margin: 8px 8px 7px 20px;
+    margin: 8px 15px 8px 20px;
 	float: left;
 	width: 17px;
 	height: 17px;
-}
-.battonTextMenu {
-    padding: 8.5px 0 9px;
-	display: inline-block;
-}
-.leftMenu>li>a:hover {
-	background: rgb(11,17,32);
 }
 .battonImgMenu>img {
 	width: 100%;
 	height: 100%;
 }
+/*delet*/
+
 .battonRead {
 	width: 166px;
 	height: 34px;
@@ -253,27 +100,15 @@ a {
 .battonRead:hover {
 	background: rgb(53,59,74);
 }
-.battonImgRead>img {
-    width: 25px;
-	height: 100%;
-}
-.battonTextRead {
-	font-size: 12.2px;
-}
 .battonRead>a {
 	color: rgb(123,133,152);
-	text-decoration: blink;
 	display: block;
 	height: 100%;
 }
-.battonTextRead {
-	font-size: 12.2px;
-	float: right;
-	padding: 8.4px 13px;
-}
-.battonImgRead {
-	float: left;
-	height: 100%;
+#bottonBlok {
+	position: absolute;
+	bottom: 0%;
+	background: rgb(33,38,50);
 }
 .footerMenu {
 	padding: 0 30px;
@@ -281,7 +116,6 @@ a {
 }
 .footerMenu>a {
 	color: rgb(123,133,152);
-	text-decoration: blink;
 	font-size: 12px;
 	display: inline-block;
 }
@@ -307,7 +141,6 @@ a {
 }
 .loginButton>a, .regisButton>a {
 	color: rgb(123,133,152);
-	text-decoration: blink;
 	font-size: 13px;
 	display: block;
 	padding: 7px 0;
@@ -315,10 +148,110 @@ a {
 .loginButton:hover, .regisButton:hover {
 	background: rgb(53,59,74);
 }
-#bottonBlok {
-	position: absolute;
-	bottom: 0%;
-	background: rgb(33,38,50);
+.commentBlok {
+    margin: 0 5px 10px 5px;
+    font-size: 10px;
+    position: relative;
+}
+.commentText {
+    display: flex;
+}
+.commentMargin {
+    margin-left: 8px;
+}
+.blokButtonRead>.commentBlok>.commentText>.commentMargin {
+    font-size: 12px;
+    margin: 8px;
+}
+.icoUsersShelf {
+    width: 31px;
+    height: 31px;
+    float: left;
+}
+.icoUsersShelf>img {
+    width: 100%;
+    height: 100%;
+}
+.panelFunctions {
+	display: block;
+	margin-bottom: 15px;
+	height: 29px;
+    margin-left: 10px;
+}
+.panelText {
+	font-size: 24px;
+	color: rgb(123,133,152);
+    margin: 0 10px;
+	float: left;
+    text-shadow: black 2px 2px 3px;
+}
+.panelBatton {
+	position: relative;
+	top: 6px;
+	float: left;
+}
+.panelBatton>a {
+	background: rgb(123,133,152);
+	color: rgb(33,38,50);
+	padding: 3px 10px 4px;
+}
+.panelBatton>a:hover {
+	color: white;
+	background: rgb(140,40,22);
+}
+.arrowLeft>div {
+	background: url(/assets/images/icoArrowLeft.png), rgb(123,133,152);
+}
+.arrowRight>div {
+	background: url(/assets/images/icoArrowRight.png), rgb(123,133,152);
+}
+.arrowLeft>div, .arrowRight>div {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+    margin: 2.5px auto;
+}
+.arrowLeft, .arrowRight {
+	height: 23px;
+	width: 31px;
+	background: rgb(123,133,152);
+    margin-right: 2px;
+}
+.blokStars {
+    /*margin-bottom: 15px;*/
+    display: table;
+    position: relative;
+    overflow: hidden;
+}
+.icoStar {
+	*background-image: url(../images/icoStar.png);
+	background-image: url(../images/icoStarTest.png);
+}
+.raiting-book {
+    background-color: rgb(123,133,152);
+    width: 100%;
+    height: 17px;
+    position: absolute;
+    z-index: 1;
+}
+.icoStarR {
+	background-image: url(../images/icoStarR.png);
+}
+.icoStarZ {
+	background-image: url(../images/icoStarZ.png);
+}
+.commentText>.icoStarR {
+    margin: 5px;
+}
+.icoStar, .icoStarR, .icoStarZ, .icoStarDark {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+    float: left;
+    position: relative;
+    z-index: 2;
 }
 .blokAdd {
     margin-top: 7px;
@@ -327,779 +260,220 @@ a {
 .blokAdd:hover .textAdd {
 	text-decoration: underline;
 }
-
-.blackFon {
-    background: rgba(0, 0, 0, 0.58);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-.textFon, .textFonRead, .textReader, .textFonAuthor, .textFonAdd, .textShelfFon, .textShelfUser {
-    position: absolute;
-    bottom: 100px;
-    color: rgb(123,133,152);
-    font-size: 16px;
-}
-.textShelfUser {
-    right: 62px;
-}
-.textShelfFon {
-    right: -93px;
-}
-.textShelfFon, .textShelfUser {
-	z-index: 3;
-}
-.textFonAdd {
-    right: 17px;
-}
-.textFonRead {
-	right: 30px;
-}
-.textFonAuthor {
-    right: 33px;
-}
-.textFonRead, .textFonAuthor, .textFonAdd, .textFon, .textReader, .textShelfUser, .textShelfFon {
-	display: none;
-}
-.textFon {
-	right: -40px;
-}
-.textReader {
-    right: 42px;
-}
-.narratorsBook {
-    position: absolute;
-    height: 261px;
-    display: none;
-}
-.bookNarrators {
-	background: rgb(123,133,152);
-    margin: 5px;
-    padding: 5px 5px 25px 5px;
-    color: rgb(33,38,50);
-    font-size: 14px;
-}
-.commentBlok {
-    margin: 0 5px 10px 5px;
-    font-size: 10px;
-}
-.commentMargin {
-    margin-left: 8px;
-}
-.narratorsInfo {
-    display: flex;
-}
-.icoStarDark {
-    margin: 1px 2px 0 11px;
-    width: 15px;
-    height: 15px;
-}
-.buttonReadDark {
-    font-size: 9.3px;
-    padding: 4px 4px;
-    text-decoration: blink;
-    background: rgb(33,38,50);
-    color: rgb(123,133,152);
-    float: right;
-}
-.commentText {
-    display: flex;
-    margin-bottom: 15px;
-}
-.icoStarDarkLitl {
-    width: 12px;
-	height: 12px;
-}
-/* testtest */
-.bookBlok .descRight {
-	height: 0;
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-    overflow: hidden;
-    transition: all .5s ease-in-out 0.1s;
-    transition-delay: 0.1s;
-}
-.bookBlok:hover .descRight {
-	height: 100px;
-    bottom: -17px;
-    overflow: visible;
-}
-
-.bookBlok .blackFon {
-	width: 0px;
-	position: absolute;
-    right: 0;
-    transition: all .5s ease-in-out 0.1s;
-	
-}
-.bookBlok:hover .blackFon{
-	width: 100%;
-}
-.bookBlok .textFon, .blokShelf .textShelfFon {
-    right: -120px;
-    transition: all .5s ease-in-out 0.1s;
-    overflow: hidden;
-}
-.bookBlok:hover .textFon {
-    right: 36px;
-    overflow: visible;
-}
-.blokShelf:hover .textShelfFon {
-    right: 95px;
-    overflow: visible;
-}
-/* test */
-
-.onePanelBook {
-    background: rgb(33,38,50);
-    color: rgb(123,133,152);
-    *width: 420px;
-    width: 260px;
-	height: 307px;
-    float: left;
-    margin-left: 10px;
-}
-.battonLike {
-	background: rgb(123,133,152);
-    width: 50px;
-    height: 31px;
-    display: block;
-    color: rgb(33,38,50);
-    float: left;
-    text-decoration: blink;
-    font-size: 12px;
-    margin-right: 5px;
-}
-.battonLike>img {
+.icoAdd {
+    background-image: url(../images/icoAdd.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 17px;
     height: 17px;
-    padding: 7px;
     float: left;
+    margin-top: 6px;
 }
-.onePanelBook>.bookInfoBlok>.nameBook {
-    font-size: 30px;
-    font-weight: 400;
-    margin: 0;
-    text-decoration: blink;
-}
-.onePanelBook>.bookInfoBlok>.nameAuthor {
-    font-size: 13px;
-}
-.posterBook {
-    width: 217px;
-    height: 307px;
-    float: left;
-}
-.posterBook>img {
-    width: 100%;
-    height: 100%;
-}
-.pageBook {
-    margin-top: 25px;
-    margin-left: 10px;
-}
-.twoPanelBook {
-    float: left;
-}
-.descText {
-	background: rgb(33,38,50);	
-    color: rgb(123,133,152);
-    width: 671px;
-    padding: 20px;
-    text-align: justify;
-    *font-size: 12px;
-    font-size: 14px;
-}
-.panelBookInfo {
-    display: inline-table;
-    float: left;
-    padding-right: 10px;
-}
-
-/* TABS */
-.twoPanelBook>.tabs {
-    position: relative;
-    margin: 0 auto;
-	width: 614px;
-  	margin-bottom: 10px;
+.textAdd {
+    font-size: 9px;
     float: right;
-}
-.twoPanelBook>.tabs label {
-	display: block;
-	float: left;
-	cursor: pointer;
-	font-weight: bold;
-	font-size: 15px;
-	position: relative;
-	padding: 0 20px;
-	height: 39px;
-	line-height: 45px;
-	text-align: center;
-	z-index: 1;
-}
-.twoPanelBook>.tabs input {
-	position: absolute;
-	left: -9999px;
-}
-#tab_1:checked ~ #tab_l1,
-#tab_2:checked ~ #tab_l2,
-#tab_3:checked ~ #tab_l3,
-.twoPanelBook>.tabs>label:hover {
-    background: rgb(33,38,50);
-}
-#tab_1:checked ~ #tab_l1,
-#tab_2:checked ~ #tab_l2,
-#tab_3:checked ~ #tab_l3,
-#tab_4:checked ~ #tab_l4 {
-    cursor: default;
-}
-.twoPanelBook>.tabs>.tabs_cont {
-	position: relative;
-	z-index: 2;
-}
-.twoPanelBook>.tabs>.tabs_cont > div {
-	position: absolute;
-	left: -9999px;
-	top: 0;
-	opacity: 0;
-    -moz-transition: opacity .5s ease-in-out;
-    -webkit-transition: opacity .5s ease-in-out;
-	transition: opacity .5s ease-in-out;
-}
-#tab_1:checked ~ .tabs_cont #tab_c1,
-#tab_2:checked ~ .tabs_cont #tab_c2,
-#tab_3:checked ~ .tabs_cont #tab_c3,
-#tab_4:checked ~ .tabs_cont #tab_c4 {
-	position: static;
-	left: 0;
-	opacity: 1;
-}
-.twoPanelBook>.tabs>.tabs_cont {
-    border-radius: 0;
-}
-.clearBoth {
-    height: 0px;
-}
-.twoPanelBook>.tabs>label {
-	border-radius: 0;
-    font-size: 14px;
-    font-weight: 400;
     color: rgb(123,133,152);
-}
-/* TABS */
-
-/* TABS2 */
-#tab2, #tab3 {
-	position: fixed; 
-}
-.menu1>a { 
-	text-decoration: none;
-    display: table-cell;
-    background: rgb(33,38,50);
-    border: 1px solid rgb(33,38,50);    
-	padding: 7px;
-}
-.menu1>a:hover, .activeMenu1 {
-	border: 1px solid rgb(123,133,152)!important;
-}
-#tab2,
-#tab3,
-.menu1 > div,
-.menu1 #tab2:target ~ div:nth-of-type(1),
-.menu1 #tab3:target ~ div:nth-of-type(1) {
-	display: none; 
-}
-.menu1 > div:nth-of-type(1),
-.menu1 #tab2:target ~ div:nth-of-type(2),
-.menu1 #tab3:target ~ div:nth-of-type(3) { 
-	display: block;
-}
-/* TABS2 */
-
-.readCategorBook {
-    float: left;
-    margin-left: 10px;
-    width: 214px;
-}
-.eBookText, .eAuBookText, .bBookText {
-    color: rgb(123,133,152);
-    font-size: 12px;
-}
-.eBookBlok, .eAuBookBlok, .bBookBlok {
-    background-size: 100%;
-    width: 25px;
-    height: 25px;
-    background-repeat: no-repeat;
-    margin-bottom: 6px;
-}
-.eBookBlok {
-    background-image: url(/assets/images/ipad.png);
-}
-.eAuBookBlok {
-    background-image: url(/assets/images/icoHePhon.png);
-}
-.bBookBlok {
-    background-image: url(/assets/images/icoEBook.png);
-}
-
-.internShopBook>img {
-    width: 65px;
-}
-.listPaperBooks {
-    width: 194px;
-    height: 202px;
-    background: rgb(33,38,50);
-    padding: 10px;
-}
-.internShopBook {
-    margin-bottom: 15px;
-}
-.spanColorPrice {
-	color: rgb(123,133,152);
-    font-size: 13px;
-}
-.listPaperBooks>h4 {
-    color: rgb(123,133,152);
-    font-size: 14px;
-    margin: 0 0 20px 0;
-    font-weight: 500;
-}
-.blokButtonRead, .listOfReaders, .listPaperBooks {
-    margin-top: 10px;
-}
-/*.korpus > div, .korpus > input { 
-	display: none; 
-}
-
-.korpus label { 
-	padding: 5px; 
-	border: 1px solid #aaa; 
-	line-height: 28px; 
-	cursor: pointer; 
-	position: relative; 
-	bottom: 1px; 
-	background: #fff; 
-}
-.korpus input[type="radio"]:checked + label { 
-	border-bottom: 2px solid #fff; 
-}
-
-.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
-.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2),
-.korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3) { 
-	display: block; padding: 5px; border: 1px solid #aaa; 
-}*/
-
-
-.infoBlok {
-    display: table;
-    padding-bottom: 10px;
-}
-.rightPanelBooks {
-    float: left;
-    height: 640px;
-    *width: 675px;
-    width: 450px;
-}
-.listOfReaders {
-    float: left;
-    width: 214px;
-}
-.readerBlok {
-	background: rgb(33,38,50);
-    padding: 10px;
-    margin-bottom: 10px;
-    color: rgb(123,133,152);
-    font-size: 14px;
-    height: 46px;
-}
-.readerInfo {
-    display: flex;
-    padding: 0 3px 3px 3px;
-}
-.buttonReader {
-    font-size: 9.3px;
-    padding: 4px 4px;
-    text-decoration: blink;
-    background: rgb(123,133,152);
-    color: rgb(33,38,50);
-}
-.otzivPlus {
-    width: 130px;
-    height: 31px;
-    display: flex;
-    text-decoration: blink;
-    background: rgb(123,133,152);
-    color: rgb(33,38,50);
-}
-.otzivPlus>div {
-    display: inline;
-}
-.plusText {
-    font-size: 22px;
-    padding: 0 1.2px 0 10px;
-}
-.battonTextOtziv {
-    padding: 8.3px;
-    font-size: 12px;
-}
-.battonLike>div {
-    margin: 7.5px;
-}
-.blokButtonRead {
-    float: left;
-    width: 194px;
-    height: 222px;
-    background: rgb(33,38,50);
-    color: rgb(123,133,152);
-    padding: 0 10px;
-    display: table;
-}
-.blokButtonRead>.commentBlok>.commentText>.commentMargin {
-    font-size: 12px;
-    margin: 8px;
-}
-.buttonReadWhile {
-    float: right;
-    text-decoration: blink;
-    background: rgb(123,133,152);
-    color: rgb(33,38,50);
-    width: 58px;
-    padding: 4px 0;
-    text-align: center;
-    font-size: 12px;
-}
-.buttonReadWhile:hover, .buttonReader:hover {
-    background: rgb(53,59,74);
-    color: rgb(123,133,152);
-}
-.yearDivBook {
-    font-size: 12px;
-}
-.izdatelDivBook {
-    font-size: 12px;
-}
-.onePanelBook>.bookInfoBlok>.nameBook, .onePanelBook>.bookInfoBlok>.nameAuthor, .onePanelBook>.bookInfoBlok>.yearDivBook, .onePanelBook>.bookInfoBlok>.izdatelDivBook {
-    margin-bottom: 5px;
-}
-.addBookButton {
-    color: rgb(123,133,152);
-    text-decoration: blink;
-    font-size: 14px;
-	display: table;
-}
-.addBookButton:hover {
-	text-decoration: underline;
-}
-.otzivPlus:hover, .battonLike:hover {
-	color: rgb(123,133,152);
-    background: rgb(53,59,74);
-}
-.likeImg {
-    background-image: url(/assets/images/Like.png);
-    background-size: 100%;
-    width: 17px;
-    height: 17px;
-    background-repeat: no-repeat;
-    float: left;
-}
-.battonLike:hover .likeImg {
-	background-image: url(/assets/images/LikeWhite.png);
-}
-.bookInfoBlok {
-    padding: 10px 20px 0px 20px;
-}
-.bottonPanelBookInfo {
-    float: right;
-    margin: 49px 10px 10px 20px;
-}
-.blokStars {
-    margin-bottom: 15px;
-}
-.addBookButton {
-    margin-bottom: 10px;
-}
-.rightPanelImgPoster {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.1s;
-}
-.recomendBook:hover .rightPanelImgPoster {
-    left: -215px;
-}
-.textFonBlock {
-	display: block;
-}
-
-/*первый вариант*/
-.recomendBook {
-    *width: 215px;
-    width: 205px;
-    height: 288px;
-    transition: all .5s ease-in-out 0.1s;
-    background: rgb(33,38,50);
-    color: rgb(123,133,152);
-    position: relative;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    overflow: hidden;
-	float: left;
-}
-/*второй варинт
-.recomendBook {
-    width: 155px;
-    height: 228px;
-	transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.1s;
-    background: rgb(33,38,50);
-    color: rgb(123,133,152);
-    position: relative;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    overflow: hidden;
-    display: -webkit-inline-box;
-}
-.recomendBook:hover {
-    width: 215px;
-    height: 288px;
-}*/
-
-.rightPanelNameBook {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-.rightPanelName {
-    *font-size: 16px;
-    font-size: 11px;
-    margin-bottom: 20px;
-}
-.rightPanelDesc {
-    font-size: 12px;
-    margin-bottom: 20px;
-    width: 70%;
-}
-.rightPanelInfoBook>.rightPanelBotton>div>.buttonReadWhile {
-    float: none;
-    margin-bottom: 5px;
-    display: table;
-    width: 53px;
-    padding: 3px 0;
-}
-.rightPanelBotton>div {
-    float: left;
-}
-.rightPanelBotton>.blokAdd {
-    float: right;
-    display: table;
-    margin-left: 20px;
-}
-.rightPanelBotton {
-    display: table;
-    margin-bottom: 10px;
-}
-.rightPanelInfoBook {
-    padding: 13px;
-}
-.imgRed {
-	background-image: url(/assets/images/imgRed.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 0;
-    float: right;
-    margin-top: -13px;
-    margin-left: 20px;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.1s;
-}
-.recomendBook:hover .imgRed {
-    height: 233px;
-}
-.blokShelf {
-    width: 300px;
-    height: 220px;
-    margin-left: 10px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    float: left;
-}
-.imgDivPosterShelf>img {
-    height: 100%;    
-	position: relative;
-    left: -10%;
-}
-.imgDivPosterShelf {
-    height: 180px;
-}
-.descBlokShelf {
-	background: rgb(33,38,50);
-    *height: 40px;
-    height: 80px;
-	bottom: 0;
-    position: relative;
-    z-index: 2;
-    padding: 0 10px;
-}
-.descBlokShelf>h2 {
-    color: rgb(123,133,152);
-    font-size: 14px;
-    margin: 0;
-    padding: 10px 10px 9px 0;
-    display: table;
-    float: left;
-}
-.icoUsersNumberShelf {
-    background-image: url(/assets/images/playerShelf.png);
-}
-.icoBooksNumberShelf {
-    background-image: url(/assets/images/icoBooksS.png);
-}
-.icoTimeNumberShelf {
-    background-image: url(/assets/images/icoTime.png);
-}
-.icoUsersNumberShelf, .icoBooksNumberShelf, .icoTimeNumberShelf {
-    background-size: 100% 100%;
-    width: 11px;
-    height: 11px;
-    margin-top: 1px;
-    margin-right: 3px;
-    background-repeat: no-repeat;
-}
-.numberShelf {
-    color: rgb(123,133,152);
-    font-size: 12px;
-    margin-right: 10px;
-}
-
-.descBlokShelf {
-    transition: all 0.5s ease-in-out 0.1s;
-}
-.blokShelf:hover .descBlokShelf {
-    bottom: 40px;
-}
-.icoUsersShelf {
-    width: 31px;
-    height: 31px;
-    float: left;
-}
-.userPanelInfo {
-    position: relative;
-	bottom: -20px;
-    margin-left: 2px;
-    display: table;
-}
-.userPanelInfo {
-    transition: all .5s ease-in-out 0.1s;
-}
-.blokShelf:hover .userPanelInfo {
-	bottom: 0;
-}
-
-.descRightShelf {
-    float: right;
-    padding: 11.5px 0;
-	position: relative;
-	bottom: 0px;
-    transition: all 0.5s ease-in-out 0.1s;
-}
-.blokShelf:hover .descRightShelf {
-	bottom: -40px;
-}
-.descRightShelf>div {
-    float: left;
-}
-.icoUsersShelf>img {
-    width: 100%;
-    height: 100%;
-}
-.usersNameShelfList {
-    color: rgb(123,133,152);
-    font-size: 13px;
-    padding: 6.5px 0 7px 10px;
-    float: left;
-}
-/*полка*/
-.blokShelf .blackFon {
-	width: 0;
-	position: absolute;
-	right: 0;
-	z-index: 1;
-	transition: all 0.5s ease-in-out 0.1s;
-}
-.blokShelf:hover .blackFon {
-    width: 100%;
-}
-
-/*Вкладки*/
-.notebook>input {
-    display: none;
-}
-.notebook>input+label {
-    cursor: pointer;
-}
-.notebook>div {
-    height: 0;
-	overflow: hidden;
-	transition: all 0.5s ease-in-out 0.1s;
-}
-.notebook > input + label:not(:last-of-type) {
-    border-right: none;
-    /*display: block;*/
-}
-.notebook > input + label:last-of-type::after {
-    display: block;
-    width: 2000px;
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 100%;
-}
-.notebook > input:checked + label {
-    border-left: #efefef;
-}
-.notebook > input:checked + label:last-of-type::after {
-    bottom: 0px;
-}
-.notebook > input:nth-of-type(1):checked ~ div:nth-of-type(1),
-.notebook > input:nth-of-type(2):checked ~ div:nth-of-type(2),
-.notebook > input:nth-of-type(3):checked ~ div:nth-of-type(3),
-.notebook > input:nth-of-type(4):checked ~ div:nth-of-type(4),
-.notebook > input:nth-of-type(5):checked ~ div:nth-of-type(5) {
-    height: 600px;
-}
-/*Вкладки*/
-
-.panelScrollBookRight {
-    height: inherit;
-    width: 840px;
-}
-.commentTextReadUsers {
-    font-size: 12px;
-    padding: 5px 0;
-    border: 1px solid rgb(123,133,152);
-    border-width: 0 0 1px 0;
-    margin: 10px 0px;
-}
-.commentText>.icoStarR {
-    margin: 5px;
+    width: 36px;
+    padding-left: 3px;
 }
 .narratorsRaiting {
     margin: 7px 0;
     font-size: 12px;
 }
-.numbPageRead {
-    float: right;
-    font-size: 13px;
-    margin: 2.5px 10px 2px 0;
+.stoProcentImg {
+    height: 100%;
+}
+.battonImgRead>img {
+    width: 25px;
+	height: 100%;
+}
+.battonTextRead {
+	font-size: 12.2px;
+}
+.battonTextRead {
+	font-size: 12.2px;
+	float: right;
+	padding: 8.4px 13px;
+}
+.battonImgRead {
+	float: left;
+	height: 100%;
+}
+/*closed*/
+#left-column.closed {
+    width: 50px;
+}
+#left-column.closed>.logo>a {
+    width: 36px;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#left-column.closed>.search {
+    width: 29px;
+    margin: 20px 9px;
+    transition: all .5s ease-in-out 0.1s;
+    cursor: pointer;
+}
+#left-column.closed>.search:hover {
+    width: 165px;
+}
+#left-column.closed>.leftMenu>li>a>.lmenu-button-name {
+    display: none;
+}
+#left-column.closed>.leftMenu>li>a>.lmenu-button-ico {
+    margin: 8px 0 8px 13px;
+}
+.leftMenu>li {
+    float: left;
+    width: 100%;
+}
+#left-column.closed>.leftMenu>li>a:hover>.lmenu-button-name {
+	display: inline-block;
+}
+#left-column.closed>.leftMenu>li>a:hover {
+    width: 165px;
+    text-align: center;
+}
+#left-column.closed>.leftMenu {
+    width: 50px;
+    display: block;
+}
+#left-column.closed>.battonRead {
+    float: left;
+    width: 25px;
+    margin: 30px 12.5px;
+    overflow: hidden;
+}
+#left-column.closed>.battonRead {
+	transition: all .5s ease-in-out 0.1s;
+}
+#left-column.closed>.battonRead:hover {
+    width: 166px;
+    background: rgb(11,17,32);
+}
+#left-column.closed>#bottonBlok {
+    display: none;
+}
+#main-column.litl-column {
+    margin-left: 60px;
+}
+.footer-back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.box_hide {
+    display: none;
+}
+.footer-window-litl>a {
+    color: rgb(123,133,152);
+    font-size: 12px;
+    display: inline-block;
+}
+.footer-window-litl {
+    position: fixed;
+    bottom: 50px;
+    left: 60px;
+    padding: 25px;
+    width: 190px;
+    background: rgb(33,38,50);
+    text-align: center;
+    z-index: 101;
+}
+/*closed*/
+.left-button-closed {
+    position: fixed;
+}
+.left-button-closed>span {
+    margin: 6px -2px;
+    float: left;
+    width: 5px;
+    height: 12px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/icoHid.png);
+	cursor: pointer;
+}
+.left-closed>span {
+    background-image: url(../images/icoShow.png)!important;
+}
+.button-login-min-menu {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(11,17,32);
+    position: absolute;
+    bottom: 20px;
+    margin: 0px 10px;
+}
+.button-login-min-menu, .button-other-min-menu {
+	display: none;
+}
+#left-column.closed>.button-login-min-menu, #left-column.closed>.button-other-min-menu {
+    display: block;
+}
+.button-login-min-menu:hover, .button-other-min-menu:hover {
+	background-color: rgb(53,59,74);
+}
+.button-login-min-menu>span {
+    margin: 6px 7px 7px 7px;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/icoAva.png);
+}
+.button-other-min-menu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 60px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.button-other-min-menu>span {
+	margin: 6px 5.5px 7px 5.5px;
+    float: left;
+    width: 19px;
+    height: 19px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/icoOther.png);
+}
+.lmenu-button-ico {
+    margin: 8px 15px 8px 20px;
+	float: left;
+	width: 17px;
+	height: 17px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.lm-but-icoBook {
+	background-image: url(../images/icoBook.png);
+}
+.lm-but-icoShelf {
+	background-image: url(../images/icoShelf.png);
+}
+.lm-but-icoGenres {
+	background-image: url(../images/icoGenres.png);
+}
+.lm-but-icoFree {
+	background-image: url(../images/icoFree.png);
+}
+.lm-but-icoAutor {
+	*background-image: url(../images/icoAutor.png);
+	background-image: url(../images/ico.svgz);
+}
+.lm-but-icoBooks {
+	background-image: url(../images/icoBooks.png);
+}
+
+#rigth-column {
+    position: fixed;
+    width: 340px;
+    height: 100%;
+    background: rgb(33,38,50);
+    right: 0;
 }

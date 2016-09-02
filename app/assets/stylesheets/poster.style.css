@@ -1,0 +1,129 @@
+﻿.poster-block {
+    *height: 486px;
+    *width: 860px;
+	width: 100%;
+    height: 454px;
+    margin: 20px 0 0 10px;
+	overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.art-poster-panel>img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.art-panel-button {
+    height: 50px;
+    background-color: rgb(33,38,50);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.art-poster-panel {
+    width: 100%;
+    *height: 434px;
+    *height: 404px;
+    height: 100%;
+    position: relative;
+}
+.art-poster-desc {
+    position: absolute;
+    color: rgb(123,133,152);
+    z-index: 2;
+    text-shadow: black 2px 2px 3px;
+	*text-shadow: black 1px 1px 7px;   
+    *margin-top: 85px; 
+    margin-top: 130px;     
+	transition: all 0.3s ease-in-out 0.1s;
+}
+.art-poster-desc>h1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 220px 20px;
+}
+.art-poster-desc>div {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.art-background-dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33,38,50,0.65);
+    *background-color: rgba(33,38,50,0.55);
+}
+.art-panel-button>span {
+    font-size: 14px;
+    float: left;
+    margin: 14px 10px 14px 0;
+}
+.art-users-list>img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 10px 5px 0 0;
+}
+.art-users-list>img {
+    margin: 13px 5px 12px 0;
+}
+.art-users-list {
+    float: left;
+    margin-right: 5px;
+}
+
+.art-list-numb {
+    float: right;
+    cursor: pointer;
+    margin: 13.4px 20px;
+}
+.art-list-numb>img {
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 5px 5px 0 0;
+}
+.art-list-numb>span {
+    margin: 4px 0;
+    float: left;
+    font-size: 12px;
+}
+
+.art-panel-button>span {
+    margin: 16px 15px;
+}
+.art-panel-button>span>span {
+    text-decoration: underline;
+    margin-left: 3px;
+}
+.poster-batton-subsc>a:hover {
+    color: rgb(123,133,152);
+    background: rgb(53,59,74);
+}
+.art-panel-button>.list-genre-close {
+    margin-top: 10px;
+}
+.poster-batton-subsc {
+    padding: 4px 15px 5px 15px;
+    float: left;
+    background-color: rgb(123,133,152);
+    color: rgb(33,38,50);
+    text-align: center;
+    font-size: 13px;
+    margin: 12px 0 0 10px;
+}
+
+.poster-block-closed>.art-poster-panel>.art-poster-desc {
+    margin-top: 35px;
+}
+.poster-block-closed>.art-poster-panel>img {
+    margin-top: -23%;
+}
+.poster-block.poster-block-closed {
+    height: 145px;
+}

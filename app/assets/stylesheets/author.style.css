@@ -1,0 +1,396 @@
+﻿.nameAuthor {
+    font-size: 30px;
+    color: rgb(123,133,152);
+    font-weight: 400;
+    margin: 0;
+    display: table;
+}
+.imgAuthor {
+    width: 170px;
+    height: 170px;
+    padding: 0 20px 0 0;
+    float: left;
+}
+.imgAuthor>img, .imgNewBookAuthor>img, .icoUsersShelf>img {
+    width: 100%;
+    height: 100%;
+}
+.mainPanel {    
+    width: 900px;
+    display: table;
+    margin: 20px 10px 0;
+    padding: 20px 20px 20px 20px;
+    background: rgb(33,38,50);
+}
+.authorComment {
+    font-size: 14px;
+    color: rgb(123,133,152);
+    float: left;
+    margin: 10px 10px 0 10px;
+}
+.authorComment:hover, .siteInfoAuthor>span>a:hover, .social-networks-add>a:hover, .biblPanelDate>span>a:hover {
+    text-decoration: underline;
+}
+.blokStars {
+    float: left;
+}
+.leftMainPanelAuthor>.blokStars {
+    margin-top: 9px;
+}
+.biogAuthor {
+    color: rgb(123,133,152);
+    float: left;
+    width: 70%;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+.siteInfoAuthor {
+    float: left;
+    margin-top: 10px;
+}
+.siteInfoAuthor>span, .siteInfoAuthor>span>a {
+    color: rgb(123,133,152);
+}
+.siteInfoAuthor>span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+.rightMainPanelAuthor {
+    float: right;
+    width: 170px;
+}
+.subsButtonAuthor>a, .subsButtonAuthor>span {
+    background-color: rgb(123,133,152);
+    color: rgb(33,38,50);
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-left: 3px;
+}
+.subsButtonAuthor>a:hover {
+	background: rgb(53,59,74);
+	color: rgb(123,133,152);
+}
+.leftMainPanelAuthor {
+    float: left;
+    width: 730px;
+}
+.subsButtonAuthor {
+    display: flex;
+    float: right;
+}
+.social-networks-add {
+    float: right;
+    width: 90px;
+    margin: 10px 30px 20px 0;
+}
+.social-networks-add>div, .social-networks-add>a {
+    color: rgb(123,133,152);
+    font-size: 14px;
+}
+.otzivPlus {
+    width: 125px;
+    display: flex;
+    background: rgb(123,133,152);
+    color: rgb(33,38,50);
+    float: right;
+}
+.otzivPlus>div {
+    display: inline;
+}
+.otzivPlus:hover, .buttonReadWhile>a:hover, .biblPanelButtonsBooks>a:hover {
+	color: rgb(123,133,152);
+    background: rgb(53,59,74);
+}
+.plusText {
+    font-size: 19px;
+    padding: 0 1.2px 0 10px;
+}
+.battonTextOtziv {
+    padding: 6.3px;
+    font-size: 12px;
+}
+.descPanelAuthor {
+    display: table;
+}
+.panelNewBookAuthor {
+    border: 1px solid rgb(123,133,152);
+    border-width: 1px 0 0 0;
+    margin-top: 20px;
+}
+.center-h3-panel-author {
+    color: rgb(123,133,152);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.newBookAuthor {
+    margin: 15px 50px;
+}
+
+.imgNewBookAuthor {
+    width: 215px;
+    height: 305px;
+    margin-right: 20px;
+    float: left;
+}
+.newBookNameBook, .descNewBook, .newBookNameAuthor, .commentText, .one-comment-user {
+    color: rgb(123,133,152);
+}
+.newBookNameBook {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+}
+.newBookNameAuthor {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.buttonReadWhile {
+    display: table;
+}
+.buttonReadWhile>a {
+    background: rgb(123,133,152);
+    color: rgb(33,38,50);
+    width: 55px;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 12px;
+    display: table;
+}
+.descNewBookAuthor>.buttonReadWhile>a {
+	float: left;
+    margin-right: 4px;
+}
+.rightPanelBotton>.buttonReadWhile>a {
+    margin-bottom: 5px;
+}
+.descNewBook {
+    margin-bottom: 15px;
+}
+.panelOneComment {
+    border: 1px solid rgb(123,133,152);
+    border-width: 1px 0 0 0;
+    margin-top: 20px;	
+}
+.center-div-one-comment {
+    color: rgb(123,133,152);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 7px;
+}
+.commentText {
+    margin: 0 6px 6px;
+}
+.icoUsersShelf {
+    width: 31px;
+    height: 31px;
+    float: left;
+}
+.commentMargin {
+    font-size: 12px;
+    margin: 8px;
+}
+.narratorsRaiting {
+    margin: 7px 0;
+    font-size: 12px;
+}
+.one-comment-user {
+    font-size: 13px;
+}
+.descNewBookAuthor {
+    float: left;
+    width: 565px;
+    margin-top: 5px;
+}
+.pan-new-comm-1 {
+    margin: 0 70px;
+}
+/*Вкладки*/
+.notebook>input {
+    display: none;
+}
+.notebook>input+label {
+    cursor: pointer;
+    background: rgb(33,38,50);
+    color: rgb(123,133,152);
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 9px 0 10px 0;
+}
+.notebook>div {
+    height: 0;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out 0.1s;
+    background: rgb(33,38,50);
+    margin-bottom: 10px;
+    padding: 0 40px 0 40px;
+}
+.notebook > input + label:not(:last-of-type) {
+    border-right: none;
+    /*display: block;*/
+}
+.notebook > input + label:last-of-type::after {
+    display: block;
+    width: 2000px;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 100%;
+}
+.notebook > input:checked + label {
+    border-left: #efefef;
+}
+.notebook > input:checked + label:last-of-type::after {
+    bottom: 0px;
+}
+.notebook > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.notebook > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.notebook > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+.notebook > input:nth-of-type(4):checked ~ div:nth-of-type(4),
+.notebook > input:nth-of-type(5):checked ~ div:nth-of-type(5) {
+    height: auto;
+    padding: 10px 40px 20px 40px;
+}
+.notebook {
+    width: 940px;
+    display: table;
+    margin: 10px;
+}
+/*Вкладки*/
+.recomendBook {
+    *width: 215px;
+    width: 205px;
+    height: 288px;
+    transition: all .5s ease-in-out 0.1s;
+    background: rgb(33,38,50);
+    color: rgb(123,133,152);
+    position: relative;
+    margin: 0 5px 10px 5px;
+    overflow: hidden;
+	float: left;
+}
+.recomendBook:hover .imgRed {
+    height: 233px;
+}
+.recomendBook:hover .rightPanelImgPoster {
+    left: -215px;
+}
+.rightPanelImgPoster {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    transition: all 1s ease-in-out 0.1s;
+}
+.rightPanelImgPoster>img {
+    width: 100%;
+    height: 100%;	
+}
+.recomendBook:hover .rightPanelImgPoster {
+    left: -215px;
+}
+.rightPanelInfoBook {
+    padding: 13px;
+}
+.imgRed {
+	background-image: url(../images/imgRed.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 0;
+    float: right;
+    margin-top: -13px;
+    margin-left: 20px;
+    transition: all 1s ease-in-out 0.1s;
+}
+.recomendBook:hover .imgRed {
+    height: 233px;
+}
+.rightPanelNameBook {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.rightPanelName {
+    *font-size: 16px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+.rightPanelDesc {
+    font-size: 12px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.rightPanelBotton {
+    display: table;
+    margin-bottom: 10px;
+}
+.rightPanelBotton>div {
+    float: left;
+}
+.rightPanelBotton>.blokAdd {
+    float: right;
+    margin-left: 15px;
+    margin-top: 9px;
+}
+.redPanel {
+    position: absolute;
+    color: white;
+    background-color: rgb(140,40,22);
+    font-size: 12px;
+    padding: 5px 5px 6px 5px;
+    box-shadow: 0px 0px 6px 0px black;
+    bottom: 5px;
+    right: 5px;
+}
+.biblPanelButtonsBooks>a {
+    background: rgb(123,133,152);
+    color: rgb(33,38,50);
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.biblPanelDate>span, .biblPanelButtonsBooks>a {
+    margin: 0 2px;
+}
+.biblPanelButtonsBooks, .biblPanelDate {
+    margin: 0 auto 15px auto;
+    display: table;
+}
+.biblPanelDate>span>a {
+    color: rgb(123,133,152);
+    font-size: 14px;
+}
+.authorSimilar {
+    width: 168px;
+    height: 186px;
+    padding: 10px;
+    display: block;
+    color: rgb(123,133,152);
+    float: left;
+}
+.authorSimilar, .icoStarR {
+    transition: all 0.1s ease-in-out 0.1s;
+}
+.img-author-similar {
+    width: 100%;
+}
+.name-author-similar {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.authorSimilar>div {
+    float: left;
+    margin-top: 2px;
+}
+.authorSimilar>.narratorsRaiting {
+    margin: 4px 2px;
+}
+.authorSimilar:hover {
+    background-color: rgb(123,133,152);
+	color: rgb(33,38,50);
+}
+.authorSimilar:hover .icoStarR {
+    background-image: url(../images/icoStarDark.png);	
+}

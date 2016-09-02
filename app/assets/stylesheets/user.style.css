@@ -1,0 +1,425 @@
+.imgUser {
+    *width: 95px;
+    width: 145px;
+    *height: 95px;
+    height: 145px;
+    padding: 0 20px 0 0;
+    float: left;
+}
+.shelf-list {
+	display: flex;
+    width: 900px;
+    margin: 0 auto;
+}
+.mainPanel {
+    *width: 900px;
+    *width: 970px;
+    *width: 1062px;
+    width: 100%;
+    display: table;
+    margin: 20px 10px 0;
+    /*padding: 20px 20px 20px 20px;*/
+    background: rgb(33,38,50);
+}
+.leftMainPanelUser {
+    float: left;
+    width: 600px;
+}
+.imgUser>img {
+    width: 100%;
+    height: 100%;
+}
+.nameUser {
+    font-size: 30px;
+    color: rgb(123,133,152);
+    font-weight: 400;
+    margin: 0;
+    display: table;
+    text-shadow: black 2px 2px 3px;
+	padding-top: 15px;
+}
+.biogUser {
+    color: rgb(123,133,152);
+    width: 70%;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+.siteInfoUser {
+    float: left;
+    margin-top: 10px;
+}
+.siteInfoUser>span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+.siteInfoUser>span, .siteInfoUser>span>a {
+    color: rgb(123,133,152);
+}
+.imgSetting {
+    background-image: url(../images/icoSetting.png);
+}
+.imgSetting:hover {
+    background-image: url(../images/icoSettingHover.png);
+}
+.icoActiv {
+    background-image: url(../images/icoActiv.png);
+}
+.icoActiv:hover {
+    background-image: url(../images/icoActivHover.png);
+}
+.imgSetting, .icoActiv {
+    background-size: 100%;
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.rightMainPanelUser {
+    float: right;
+    margin: 15px;
+}
+.textPanelUser>a {
+    font-size: 14px;
+    color: rgb(123,133,152);
+}
+.textPanelUser>a:hover, .siteInfoUser>span>a:hover {
+    text-decoration: underline;
+}
+.rightMainPanelUser>span, .rightMainPanelUser>a {
+    float: left;
+    margin-left: 10px;
+}
+.twoPanelUser {
+    float: left;
+    margin: 10px;
+    *width: 940px;
+    *width: 970px;
+    *width: 1062px;
+    width: 100%;
+}
+/* TABS */
+.twoPanelUser>.tabs label {
+    float: left;
+    cursor: pointer;
+    padding: 8px 15px 6px;
+}
+.twoPanelUser>.tabs input {
+	position: absolute;
+	left: -9999px;
+}
+#tab_1:checked ~ #tab_l1,
+#tab_2:checked ~ #tab_l2,
+#tab_3:checked ~ #tab_l3,
+#tab_4:checked ~ #tab_l4,
+#tab_5:checked ~ #tab_l5,
+#tab_6:checked ~ #tab_l6,
+.twoPanelUser>.tabs>label:hover {
+    background: rgb(33,38,50);
+}
+#tab_1:checked ~ #tab_l1,
+#tab_2:checked ~ #tab_l2,
+#tab_3:checked ~ #tab_l3,
+#tab_4:checked ~ #tab_l4,
+#tab_5:checked ~ #tab_l5,
+#tab_6:checked ~ #tab_l6 {
+    cursor: default;
+}
+.twoPanelUser>.tabs>.tabs_cont {
+	position: relative;
+	z-index: 2;
+}
+.twoPanelUser>.tabs>.tabs_cont > div {
+	position: absolute;
+    width: 100%;
+	left: -9999px;
+	top: 0;
+	opacity: 0;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3,
+#tab_4:checked ~ .tabs_cont #tab_c4,
+#tab_5:checked ~ .tabs_cont #tab_c5,
+#tab_6:checked ~ .tabs_cont #tab_c6 {
+	position: static;
+	left: 0;
+	opacity: 1;
+}
+.twoPanelUser>.tabs>.tabs_cont {
+    border-radius: 0;
+}
+.clearBoth {
+    height: 0px;
+}
+.twoPanelUser>.tabs>label {
+	border-radius: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(123,133,152);
+}
+/* TABS */
+.descText {
+    background: rgb(33,38,50);
+    padding: 20px;
+    display: flex;
+}
+.recomendBook {
+    margin: 0 10px 20px 10px!important;
+}
+.biblPanelButtonsBooks, .biblPanelDate {
+    margin: 10px auto 30px auto!important;
+    display: table;
+}
+/*полка*/
+.blokShelf {
+    width: 300px;
+    height: 220px;
+	margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+    /*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);*/
+    float: left;
+}
+.blokShelf .blackFon {
+    width: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.textShelfFon {
+    right: -120px;
+    transition: all .5s ease-in-out 0.1s;
+    overflow: hidden;
+}
+.textFonBlock {
+    display: block;
+}
+.textShelfUser, .textShelfFon {
+	display: none;
+}
+.textShelfUser {
+    z-index: 3;
+}
+.textShelfUser {
+    right: 62px;
+}
+.imgDivPosterShelf {
+    height: 180px;
+}
+.imgDivPosterShelf>img {
+    /*height: 100%;
+    position: relative;
+    left: -10%;*/
+	width: auto;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,0,0);
+	
+}
+.descBlokShelf {
+    background: rgb(33,38,50);
+    height: 80px;
+    bottom: 0;
+    position: relative;
+    z-index: 2;
+    padding: 0 10px;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.descBlokShelf>h2 {
+    color: rgb(123,133,152);
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 10px 9px 0;
+    display: table;
+    float: left;
+}
+.descRightShelf {
+    float: right;
+    padding: 11.5px 0;
+    position: relative;
+    bottom: 0px;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.descRightShelf>div {
+    float: left;
+}
+.icoUsersNumberShelf, .icoBooksNumberShelf, .icoTimeNumberShelf {
+    background-size: 100% 100%;
+    width: 11px;
+    height: 11px;
+    margin-top: 1px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+.descRightShelf>div {
+    float: left;
+}
+.icoUsersNumberShelf {
+    background-image: url(../images/playerShelf.png);
+}
+.icoBooksNumberShelf {
+    background-image: url(../images/icoBooksS.png);
+}
+.icoTimeNumberShelf {
+    background-image: url(../images/icoTime.png);
+}
+.userPanelInfo {
+    transition: all .5s ease-in-out 0.1s;
+}
+
+.userPanelInfo {
+    position: relative;
+    bottom: -20px;
+    margin-left: 2px;
+    display: table;
+}
+.icoUsersShelf {
+    width: 31px;
+    height: 31px;
+    float: left;
+}
+.icoUsersShelf>img {
+    width: 100%;
+    height: 100%;
+}
+.usersNameShelfList {
+    color: rgb(123,133,152);
+    font-size: 13px;
+    padding: 6.5px 0 7px 10px;
+    float: left;
+}
+.blokShelf:hover .descBlokShelf {
+    bottom: 34px;
+}
+.numberShelf {
+    color: rgb(123,133,152);
+    font-size: 12px;
+    margin-right: 10px;
+}
+.blokShelf:hover .userPanelInfo {
+	bottom: 0;
+}
+.blokShelf:hover .descRightShelf {
+	bottom: -34px;
+}
+.textShelfFon {
+    right: -120px;
+    transition: all .5s ease-in-out 0.1s;
+    overflow: hidden;
+}.textShelfFon, .textShelfUser {
+    position: absolute;
+    bottom: 100px;
+    color: rgb(123,133,152);
+    font-size: 16px;
+}
+.blokShelf:hover .textShelfFon {
+    right: 95px;
+    overflow: visible;
+}
+.textShelfFon, .textShelfUser {
+	z-index: 3;
+}
+.textFonBlock {
+    display: block;
+}
+.blokShelf .blackFon {
+    width: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.blokShelf:hover .blackFon {
+    width: 100%;
+}
+.blackFon {
+    background: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.shelfList {
+    margin-top: 20px;
+    display: table;
+}
+.userPanelInfo:hover .usersNameShelfList {
+    text-decoration: underline;
+}
+/*полка*/
+.shelf-long {
+    /*display: table;*/
+	margin: 0 auto;
+    height: 590px;
+    overflow: overlay;
+}
+.search>p {
+    color: rgb(33,38,50);
+    font-size: 12px;
+    float: left;
+    margin: 7px 10px;
+}
+.biblPanelButtonsBooks>.search {
+    margin: 10px 20px 20px;
+}
+.blok-citation {
+    width: 405px;
+    color: rgb(123,133,152);
+    float: left;
+}
+.text-citation {
+    font-size: 14px;
+    border: 1px solid rgb(123,133,152);
+    border-width: 0 0 1px 0;
+    padding-bottom: 10px;
+}
+.author-book-citation {
+    font-size: 12px;
+    /*margin-left: 5px;*/
+}
+.social-net-citation {
+    float: right;
+}
+.social-net-citation-vk, .social-net-citation-odn, .social-net-citation-face, .social-net-citation-twit {
+    background-image: url(../images/icoVK.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin: 4px;
+}
+.social-net-citation-vk {
+    background-image: url(../images/icoVK.png);	
+}
+.social-net-citation-odn {
+    background-image: url(../images/icoFace.png);	
+}
+.social-net-citation-face {
+    background-image: url(../images/icoOdn.png);	
+}
+.social-net-citation-twit {
+    background-image: url(../images/icoTwit.png);	
+}
+.bottom-citation {
+    margin-top: 2px;
+}
+.list-citation {
+    margin: 0 auto;
+    display: table;
+}
+.hr-citation {
+    float: left;
+    display: table;
+    height: 1px;
+    margin: 0 30px;
+}
+.biblPanelButtonsBooks {
+    border: 1px solid rgb(123,133,152);
+    border-width: 0 0 1px 0;
+    padding-bottom: 30px;
+}

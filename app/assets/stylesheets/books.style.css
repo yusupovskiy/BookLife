@@ -1,0 +1,295 @@
+﻿.recomend {
+    margin: 25px 0;
+	width: 100%;
+}
+.arrowsIco {
+	display: flex;
+	position: relative;
+	top: 11px;
+	float: right;
+}
+.booksList {
+	display: flex;
+}
+.bookBlok .descRight {
+	height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    overflow: hidden;
+    transition: all .5s ease-in-out 0.1s;
+    transition-delay: 0.1s;
+}
+.bookBlok:hover .descRight {
+	height: 100px;
+    bottom: -17px;
+    overflow: visible;
+}
+
+.bookBlok .blackFon {
+	width: 0px;
+	position: absolute;
+    right: 0;
+    transition: all .5s ease-in-out 0.1s;
+	
+}
+.bookBlok:hover .blackFon{
+	width: 100%;
+}
+.bookBlok .textFon, .blokShelf .textShelfFon {
+    right: -120px;
+    transition: all .5s ease-in-out 0.1s;
+    overflow: hidden;
+}
+.bookBlok:hover .textFon {
+    right: 36px;
+    overflow: visible;
+}
+/*полка*/
+.blokShelf .blackFon {
+	width: 0;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	transition: all 0.5s ease-in-out 0.1s;
+}
+.blokShelf:hover .blackFon {
+    width: 100%;
+}
+.narratorsBook {
+    position: absolute;
+    height: 261px;
+    display: none;
+}
+.bookNarrators {
+	background: rgb(123,133,152);
+    margin: 5px;
+    padding: 5px 5px 25px 5px;
+    color: rgb(33,38,50);
+    font-size: 14px;
+}
+.narratorsInfo {
+    display: flex;
+}
+.icoStarDark {
+    margin: 1px 2px 0 11px;
+    width: 15px;
+    height: 15px;
+}
+.icoStarDark {
+	background-image: url(/assets/images/icoStarDark.png);
+}
+.icoStarDarkLitl {
+    width: 12px;
+	height: 12px;
+}
+.buttonReadDark {
+    font-size: 9.3px;
+    padding: 4px 4px;
+    text-decoration: blink;
+    background: rgb(33,38,50);
+    color: rgb(123,133,152);
+    float: right;
+}
+.blackFon {
+    background: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.textFon, .textFonRead, .textReader, .textFonAuthor, .textFonAdd, .textShelfFon, .textShelfUser {
+    position: absolute;
+    bottom: 100px;
+    color: rgb(123,133,152);
+    font-size: 16px;
+}
+.textShelfUser {
+    right: 62px;
+}
+.textShelfFon {
+    right: -93px;
+}
+.textShelfFon, .textShelfUser {
+	z-index: 3;
+}
+.textFonAdd {
+    right: 17px;
+}
+.textFonRead {
+	right: 30px;
+}
+.textFonAuthor {
+    right: 33px;
+}
+.textFonRead, .textFonAuthor, .textFonAdd, .textFon, .textReader, .textShelfUser, .textShelfFon {
+	display: none;
+}
+.textFon {
+	right: -40px;
+}
+.textReader {
+    right: 42px;
+}
+/* testtest */
+.blokShelf:hover .textShelfFon {
+    right: 95px;
+    overflow: visible;
+}
+/* test */
+.textFonBlock {
+	display: block;
+}
+.imgDivPosterBook>img {
+	width: 100%;
+}
+.imgDivPosterBook {
+    width: 100%;
+    *height: 287px;
+    height: 277px;
+}
+.descBlok {
+	background: rgb(33,38,50);
+	width: 171px;
+    height: 90px;
+	position: relative;
+	/*bottom: 25px;*/
+    *margin-top: -25px;
+    margin-top: -15px;
+	padding: 0 10px;
+}
+.descLeft {
+	float: left;
+	margin-top: 10px;
+}
+.nameAuthor, .nameBook {
+	color: rgb(123,133,152);
+    margin-bottom: 5px;
+    display: table;
+}
+.nameAuthor:hover, .nameBook:hover , .userPanelInfo:hover .usersNameShelfList {
+	text-decoration: underline;
+}
+.nameBook {
+	font-size: 14px;
+}
+.nameAuthor {
+	font-size: 11px;
+}
+.descRight {
+	float: right;
+	margin-top: 5px;
+}
+.buttonReadCh, .buttonReadS {
+    font-size: 9.3px;
+    width: 41px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: rgb(123,133,152);
+    text-align: center;
+    color: rgb(33,38,50);
+    margin: 0 auto 3px auto;
+    display: table;
+    cursor: pointer;
+}
+.buttonReadCh:hover, .buttonReadS:hover {
+	color: rgb(123,133,152);
+    background: rgb(53,59,74);
+}
+.blokShelf {
+    width: 300px;
+    height: 220px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    float: left;
+}
+.blokShelf:hover .descBlokShelf {
+    bottom: 40px;
+}
+.imgDivPosterShelf>img {
+    height: 100%;    
+	position: relative;
+    left: -10%;
+}
+.imgDivPosterShelf {
+    height: 180px;
+}
+.descBlokShelf {
+	background: rgb(33,38,50);
+    *height: 40px;
+    height: 80px;
+	bottom: 0;
+    position: relative;
+    z-index: 2;
+    padding: 0 10px;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.descBlokShelf>h2 {
+    color: rgb(123,133,152);
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 10px 9px 0;
+    display: table;
+    float: left;
+}
+.descRightShelf {
+    float: right;
+    padding: 11.5px 0;
+	position: relative;
+	bottom: 0px;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.blokShelf:hover .descRightShelf {
+	bottom: -40px;
+}
+.descRightShelf>div {
+    float: left;
+}
+.icoBooksNumberShelf {
+    background-image: url(/assets/images/icoBooksS.png);
+}
+.icoTimeNumberShelf {
+    background-image: url(/assets/images/icoTime.png);
+}
+.icoUsersNumberShelf {
+    background-image: url(/assets/images/playerShelf.png);
+}
+.numberShelf {
+    color: rgb(123,133,152);
+    font-size: 12px;
+    margin-right: 10px;
+}
+.userPanelInfo {
+    position: relative;
+	bottom: -20px;
+    margin-left: 2px;
+    display: table;
+}
+.userPanelInfo {
+    transition: all .5s ease-in-out 0.1s;
+}
+.blokShelf:hover .userPanelInfo {
+	bottom: 0;
+}
+.icoUsersNumberShelf, .icoBooksNumberShelf, .icoTimeNumberShelf {
+    background-size: 100% 100%;
+    width: 11px;
+    height: 11px;
+    margin-top: 1px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+}
+.usersNameShelfList {
+    color: rgb(123,133,152);
+    font-size: 13px;
+    padding: 6.5px 0 7px 10px;
+    float: left;
+}
+.bookBlok {
+	width: 191px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}

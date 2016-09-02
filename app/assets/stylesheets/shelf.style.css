@@ -1,0 +1,136 @@
+.shelfUserBookCom {
+    margin: 0 10px 10px 10px;
+    *width: 860px;
+    width: 521px;
+    height: 289px;
+    background: rgb(33,38,50);
+    float: left;
+}
+.recomendBook {
+    margin: 0!important;
+}
+.art-user-block>img {
+    width: 37px;
+    height: 37px;
+    float: left;
+    margin-right: 10px;
+}
+.art-user {
+    width: 100%;
+    height: 37px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 45px;
+}
+.art-user-block {
+    display: table;
+    margin: 0 auto;
+}
+.art-user-desc-panel {
+    float: left;
+    color: rgb(123,133,152);
+    *text-shadow: black 1px 1px 7px;
+    text-shadow: black 2px 2px 3px;
+    font-size: 14px;
+}
+.art-user-desc-panel>div {
+    margin-top: 2px;
+}
+.art-user-desc-panel>span {
+    font-size: 12px;
+}
+.shelf-panel-user>img {
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+.shelf-comments {
+    float: left;
+    margin: 0 20px;
+    *width: 615px;
+    width: 276px;
+}
+.shelf-panel-user>span {
+    float: left;
+    color: rgb(123,133,152);
+    font-size: 13px;
+    margin: 5px 0;
+}
+.shelf-panel-user>span, .shelf-panel-user>img {
+    margin-right: 10px;
+}
+.shelf-rating>img {
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+.shelf-rating>img, .shelf-rating>span {
+    margin-right: 5px;
+}
+.shelf-rating {
+    float: left;
+    margin: 4px 0 0 5px;
+    cursor: pointer;
+}
+.shelf-rating>span {
+    font-size: 12px;
+    color: rgb(123,133,152);
+    float: left;
+    margin-top: 1px;
+}
+.shelf-date>img {
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 5px 5px 0 0;
+}
+.shelf-date>span {
+    margin: 4px 0;
+    float: left;
+    font-size: 12px;
+}
+.shelf-date {
+    float: right;
+    margin-top: 1px;
+    cursor: pointer;
+}
+.shelf-panel-user {
+    padding: 10px 0;
+    border: 1px solid rgb(123,133,152);
+    border-width: 0 0 1px 0;
+    float: left;
+    width: 100%;
+}
+.shelf-text {
+    float: left;
+    margin-top: 15px;
+    font-size: 14px;
+    overflow: auto;
+    height: 150px;
+}
+.shelf-button-comm>span {
+    font-size: 14px;
+    float: left;
+    margin: 14px 10px 14px 0;
+}
+.shelf-button-comm>img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 10px 5px 0 0;
+}
+.shelf-button-comm {
+    float: left;
+    margin-top: 20px;
+    border: 1px solid rgb(123,133,152);
+    border-width: 1px 0 0 0;
+}
+.shelf-button-comm>span>span {
+    text-decoration: underline;
+    margin-left: 3px;
+}
+.shelf-list-comm-book {
+    width: 1082px;
+    height: 550px;
+    margin-top: 10px;
+}

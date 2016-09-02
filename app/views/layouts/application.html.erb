@@ -12,42 +12,58 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+		<div class="footer-menu-litl box_hide">
+			<div class="footer-back"></div>
+			<div class="footer-window-litl footerMenu">
+					<a href="#">О сервисе</a>
+					<a href="#">Обратная связь</a>
+					<a href="#">Служба поддержки</a>
+					<a href="#">Партнерам</a>
+					<a href="#">Правообладателям</a>
+					<a href="#">Не нашли нужную книгу?</a>
+					<a href="#">Услуги b2b</a>
+					<a href="#">Вакансии</a>
+					<a href="#">Подписка для компаний</a>
+			</div>
+		</div>
+		<div id="left-column">
+			<div class="logo"><a href="#">КнигаЖизнь</a></div>
+			<div class="search"><div class="searchIco"></div></div>
+			<ul class="leftMenu">
+				<li><a href="#"><span class="lmenu-button-ico lm-but-icoBook"></span><span class="lmenu-button-name">Мои книги</span></li>
+				<li><a href="#"><span class="lmenu-button-ico lm-but-icoShelf"></span><span class="lmenu-button-name">Библиотека</span></a></li>
+				<li><a title="Вкладка с подписками пользователя" href="#"><span class="lmenu-button-ico lm-but-icoShelf"></span><span class="lmenu-button-name">Подписки</span></a></li>
+				<li><a href="#"><span class="lmenu-button-ico lm-but-icoGenres"></span><span class="lmenu-button-name">Жанр</span></a></li>
+				<li><a href="#"><span class="lmenu-button-ico lm-but-icoFree"></span><span class="lmenu-button-name">Бесплатные книги</span></a></li>
+				<li><a href="#"><span class="lmenu-button-ico lm-but-icoAutor"></span><span class="lmenu-button-name">Авторы</span></a></li>
+				<li><a href="#"><span class="lmenu-button-ico lm-but-icoBooks"></span><span class="lmenu-button-name">Серии книг</span></a></li>
+			</ul>
+			<div class="battonRead">
+				<a href="#" title="Продолжить читать последнюю книгу"><span class="battonImgRead"><img src="assets/images/poster/imageBook3.jpg" /></span><span class="battonTextRead">Продолжить чтение...</span></a>
+			</div>
+			<div id="bottonBlok">
+				<div class="footerMenu">
+					<a href="#">О сервисе</a>
+					<a href="#">Обратная связь</a>
+					<a href="#">Служба поддержки</a>
+					<a href="#">Партнерам</a>
+					<a href="#">Правообладателям</a>
+					<a href="#">Не нашли нужную книгу?</a>
+					<a href="#">Услуги b2b</a>
+					<a href="#">Вакансии</a>
+					<a href="#">Подписка для компаний</a>
+				</div>
+				
+				<div class="bottonLoginButton">
+					<div class="loginButton"><a href="index.html">Вход</a></div>
+					<div class="regisButton"><a href="index.html">Регистрация</a></div>
+				</div>
+			</div>
+			<div title="Другие вкладки" class="button-other-min-menu"><span></span></div>
+			<a title="Авторизация" href="#" class="button-login-min-menu"><span></span></a>
+		</div>
 
-    <div id="leftBlokContent">
-      <div class="logo"><a href="index.html">КнигаЖизнь</a></div>
-      <div class="search"><div class="searchIco"></div></div>
-      <ul class="leftMenu">
-        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoBook.png" /></span><span class="battonTextMenu">Мои книги</span></a></li>
-        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoShelf.png" /></span><span class="battonTextMenu">Библиотека</span></a></li>
-        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoGenres.png" /></span><span class="battonTextMenu">Жанр</span></a></li>
-        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoFree.png" /></span><span class="battonTextMenu">Бесплатные книги</span></a></li>
-        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoAutor.png" /></span><span class="battonTextMenu">Авторы</span></a></li>
-        <li><a href="index.html"><span class="battonImgMenu"><img src="/assets/images/icoBooksS.png" /></span><span class="battonTextMenu">Серии книг</span></a></li>
-      </ul>
-      <div class="battonRead">
-        <a href="index2.html"><span class="battonImgRead"><img src="/assets/images/poster/imageBook3.jpg" /></span><span class="battonTextRead">Продолжить чтение...</span></a>
-      </div>
-      <div id="bottonBlok">
-        <div class="footerMenu">
-          <a href="index.html">О сервисе</a>
-          <a href="index.html">Обратная связь</a>
-          <a href="index.html">Служба поддержки</a>
-          <a href="index.html">Партнерам</a>
-          <a href="index.html">Правообладателям</a>
-          <a href="index.html">Не нашли нужную книгу?</a>
-          <a href="index.html">Услуги b2b</a>
-          <a href="index.html">Вакансии</a>
-          <a href="index.html">Подписка для компаний</a>
-        </div>
-        
-        <div class="bottonLoginButton">
-          <div class="loginButton"><a href="index.html">Вход</a></div>
-          <div class="regisButton"><a href="index.html">Регистрация</a></div>
-        </div>
-      </div>
-    </div>
-
-<div id="rightBlokContent">
+<div id="main-column">
 
 <%= yield %>
 
